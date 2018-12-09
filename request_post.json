@@ -1,0 +1,23 @@
+
+{
+  "id": 1,
+  "category": {
+    "id": 2,
+    "name": "allie"
+  },
+  "name": "the test doggie",
+  "photoUrls": [
+    "www.sweetpics.com/awsome.jpg"
+  ],
+  "tags": [
+    {
+      "id": 3,
+      "name": "eats a lot"
+    },
+    {
+      "id": "3",
+      "name": "eats a lot"
+    }
+  ],
+  "status": "vailable"
+}

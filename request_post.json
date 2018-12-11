@@ -15,9 +15,9 @@
       "name": "eats a lot"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "eats a lot"
     }
   ],
-  "status": "vailable"
+  "status": "available"
 }

@@ -665,10 +665,28 @@ definitions:
         type: "integer"
         format: "int64"
       category:
-        $ref: "#/definitions/Category"
+          allOf:
+              - $ref: "#/definitions/Category"
+              - $ref: "#/definitions/Tag"
       name:
         type: "string"
         example: "doggie"
+      othername:
+          type: "object"
+          name:
+            type: "string"
+            example: "doggie"
+          id:
+            type: "integer"
+            format: "int64"
+          mothername:
+              type: "object"
+              name:
+                type: "string"
+                example: "doggie"
+              id:
+                type: "integer"
+                format: "int64"
       photoUrls:
         type: "array"
         xml:

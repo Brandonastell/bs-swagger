@@ -1,0 +1,124 @@
+key,val in body
+keys_tuple ('body', 'properties')
+dic {'schema': []}
+key,val description Pet object that needs to be added to the store
+keys_tuple ('body', 'properties', 'required')
+dic {'name': 'body'}
+key,val schema {'ref': 'definitions_Pet'}
+keys_tuple ('body', 'properties', 'schema')
+keys_tuple ('body', 'properties', 'schema')
+dic {'name': 'body', 'required': True}
+keys_tuple ('body', 'properties', 'schema', 'required')
+dic {'type': 'object'}
+key,val id {'type': 'integer', 'format': 'int64'}
+keys_tuple ('body', 'properties', 'schema', 'id')
+dic {'type': 'object', 'required': ['name', 'photoUrls']}
+keys_tuple ('body', 'properties', 'schema', 'id')
+dic {'type': 'object', 'required': ['name', 'photoUrls'], 'id': {'type': 'integer'}}
+key,val category {'ref': 'definitions_Category'}
+keys_tuple ('body', 'properties', 'schema', 'category')
+keys_tuple ('body', 'properties', 'schema', 'category')
+dic {'type': 'object', 'required': ['name', 'photoUrls'], 'id': {'format': 'int64'}}
+key,val id {'type': 'integer', 'format': 'int64'}
+keys_tuple ('body', 'properties', 'schema', 'category', 'id')
+dic {'type': 'object'}
+keys_tuple ('body', 'properties', 'schema', 'category', 'id')
+dic {'type': 'object', 'id': {'type': 'integer'}}
+keys_tuple ('body', 'properties', 'schema', 'category')
+dic {'type': 'object', 'required': ['name', 'photoUrls'], 'id': {'format': 'int64'}, 'category': {'type': 'object', 'id': {'format': 'int64'}}}
+key,val xml {'name': 'Category'}
+keys_tuple ('body', 'properties', 'schema', 'category', 'xml')
+dic {'name': {'type': 'string'}}
+keys_tuple ('body', 'properties', 'schema')
+dic {'name': 'body', 'required': True, 'schema': {'type': 'object', 'required': ['name', 'photoUrls'], 'id': {'format': 'int64'}, 'category': {'name': {'type': 'string'}, 'xml': {'name': 'Category'}}}}
+key,val photoUrls {'type': 'array', 'xml': {'name': 'photoUrl', 'wrapped': True}, 'items': {'type': 'string'}}
+keys_tuple ('body', 'properties', 'schema', 'photoUrls')
+keys_tuple ('body', 'properties', 'schema', 'photoUrls')
+dic {'name': {'type': 'string', 'example': 'doggie'}}
+key,val xml {'name': 'photoUrl', 'wrapped': True}
+keys_tuple ('body', 'properties', 'schema', 'photoUrls', 'xml')
+dic {'type': 'array'}
+key,val wrapped True
+key,val items {'type': 'string'}
+keys_tuple ('body', 'properties', 'schema', 'photoUrls', 'items')
+dic {'type': 'array', 'xml': {'name': 'photoUrl'}}
+key,val tags {'type': 'array', 'xml': {'name': 'tag', 'wrapped': True}, 'items': {'ref': 'definitions_Tag'}}
+keys_tuple ('body', 'properties', 'schema', 'tags')
+keys_tuple ('body', 'properties', 'schema', 'tags')
+dic {'name': {'type': 'string', 'example': 'doggie'}, 'photoUrls': {'type': 'array', 'xml': {'name': 'photoUrl'}, 'items': {'type': 'string'}}}
+key,val xml {'name': 'tag', 'wrapped': True}
+keys_tuple ('body', 'properties', 'schema', 'tags', 'xml')
+dic {'type': 'array'}
+key,val wrapped True
+key,val items {'ref': 'definitions_Tag'}
+keys_tuple ('body', 'properties', 'schema', 'tags', 'items')
+keys_tuple ('body', 'properties', 'schema', 'tags', 'items')
+dic {'type': 'array', 'xml': {'name': 'tag'}}
+key,val id {'type': 'integer', 'format': 'int64'}
+keys_tuple ('body', 'properties', 'schema', 'tags', 'items', 'id')
+dic {'type': 'object'}
+keys_tuple ('body', 'properties', 'schema', 'tags', 'items', 'id')
+dic {'type': 'object', 'id': {'type': 'integer'}}
+keys_tuple ('body', 'properties', 'schema', 'tags', 'items')
+dic {'type': 'array', 'xml': {'name': 'tag'}, 'items': {'type': 'object', 'id': {'format': 'int64'}}}
+key,val xml {'name': 'Tag'}
+keys_tuple ('body', 'properties', 'schema', 'tags', 'items', 'xml')
+dic {'name': {'type': 'string'}}
+key,val status {'type': 'string', 'description': 'pet status in the store', 'enum': ['available', 'pending', 'sold']}
+keys_tuple ('body', 'properties', 'schema', 'status')
+dic {'name': {'type': 'string', 'example': 'doggie'}, 'photoUrls': {'type': 'array', 'xml': {'name': 'photoUrl'}, 'items': {'type': 'string'}}, 'tags': {'type': 'array', 'xml': {'name': 'tag'}, 'items': {'name': {'type': 'string'}, 'xml': {'name': 'Tag'}}}}
+key,val description pet status in the store
+keys_tuple ('body', 'properties', 'schema', 'status')
+dic {'name': {'type': 'string', 'example': 'doggie'}, 'photoUrls': {'type': 'array', 'xml': {'name': 'photoUrl'}, 'items': {'type': 'string'}}, 'tags': {'type': 'array', 'xml': {'name': 'tag'}, 'items': {'name': {'type': 'string'}, 'xml': {'name': 'Tag'}}}, 'status': {'type': 'string'}}
+key,val xml {'name': 'Pet'}
+keys_tuple ('body', 'properties', 'schema', 'xml')
+dic {'name': {'type': 'string', 'example': 'doggie'}, 'photoUrls': {'type': 'array', 'xml': {'name': 'photoUrl'}, 'items': {'type': 'string'}}, 'tags': {'type': 'array', 'xml': {'name': 'tag'}, 'items': {'name': {'type': 'string'}, 'xml': {'name': 'Tag'}}}, 'status': {'enum': ['available', 'pending', 'sold']}}
+final schema
+{
+  "body": {
+    "schema": [],
+    "properties": {
+      "name": "body",
+      "required": true,
+      "schema": {
+        "name": {
+          "type": "string",
+          "example": "doggie"
+        },
+        "photoUrls": {
+          "type": "array",
+          "xml": {
+            "name": "photoUrl"
+          },
+          "items": {
+            "type": "string"
+          }
+        },
+        "tags": {
+          "type": "array",
+          "xml": {
+            "name": "tag"
+          },
+          "items": {
+            "name": {
+              "type": "string"
+            },
+            "xml": {
+              "name": "Tag"
+            }
+          }
+        },
+        "status": {
+          "enum": [
+            "available",
+            "pending",
+            "sold"
+          ]
+        },
+        "xml": {
+          "name": "Pet"
+        }
+      }
+    }
+  }
+}
